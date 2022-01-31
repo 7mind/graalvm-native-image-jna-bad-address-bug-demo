@@ -1,0 +1,12 @@
+{
+  "resources":{
+  "includes":[
+    {
+      "pattern":"\\Qcom/github/dockerjava/zerodep/shaded/org/apache/hc/client5/version.properties\\E"
+    }, 
+    {
+      "pattern":"\\Qcom/sun/jna/linux-x86-64/libjnidispatch.so\\E"
+    }
+  ]},
+  "bundles":[]
+}
