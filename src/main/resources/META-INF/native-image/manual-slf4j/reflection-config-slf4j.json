@@ -1,0 +1,6 @@
+[
+  {
+      "name":  "org.slf4j.impl.StaticLoggerBinder",
+      "allDeclaredConstructors": true
+  }
+]

@@ -22,7 +22,7 @@
 
         <dependency>
             <groupId>com.github.docker-java</groupId>
-            <artifactId>docker-java-transport-zerodep</artifactId>
+            <artifactId>docker-java-transport-netty</artifactId>
             <version>3.2.12</version>
         </dependency>
 
@@ -63,6 +63,9 @@
                     <buildArgs>
                         <buildArg>--no-fallback</buildArg>
                         <buildArg>--allow-incomplete-classpath</buildArg>
+                        <buildArg>-H:+AddAllCharsets</buildArg>
+                        <buildArg>--enable-url-protocols=unix,http,https</buildArg>
+<!--                        <buildArg>&#45;&#45;initialize-at-run-time=io.netty.channel.kqueue.Native,io.netty.channel.kqueue.KQueueEventArray,io.netty.util.internal.logging.Log4JLogger,io.netty.handler.ssl.ConscryptAlpnSslEngine,io.netty.handler.ssl.ReferenceCountedOpenSslEngine,io.netty.util.AbstractReferenceCounted,org.slf4j.LoggerFactory</buildArg>-->
                     </buildArgs>
                 </configuration>
             </plugin>
